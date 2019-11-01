@@ -1,4 +1,6 @@
-package shapes.shape;
+package shapes.comparable;
+
+import shapes.shape.Circle;
 
 public class ComparableCircle extends Circle implements Comparable<ComparableCircle> {
     public ComparableCircle() {

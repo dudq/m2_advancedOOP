@@ -1,4 +1,4 @@
-package shapes.shape;
+package shapes.comparable;
 
 import java.util.Arrays;
 
