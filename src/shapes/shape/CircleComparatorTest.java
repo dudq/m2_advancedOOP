@@ -1,10 +1,5 @@
 package shapes.shape;
 
-import shapes.comparator.CircleComparator;
-
-import java.util.Arrays;
-import java.util.Comparator;
-
 public class CircleComparatorTest {
     public static void main(String[] args) {
         Circle[] circles = new Circle[3];
@@ -12,15 +7,16 @@ public class CircleComparatorTest {
         circles[1] = new Circle();
         circles[2] = new Circle(2.0, "red", false);
 
-        System.out.println("Pre-sorted");
+        System.out.println("Pre-resize");
         for (Circle circle : circles) {
             System.out.println(circle);
         }
 
-        Comparator circleComparator = new CircleComparator();
-        Arrays.sort(circles, circleComparator);
+//        circles[0].resize(5);
+//        Comparator circleComparator = new CircleComparator();
+//        Arrays.sort(circles, circleComparator);
 
-        System.out.println("After-sorted");
+        System.out.println("After-resize");
         for (Circle circle : circles) {
             System.out.println(circle);
         }
